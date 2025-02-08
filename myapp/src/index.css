@@ -1,0 +1,42 @@
+/* Tailwind base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text: #00191e;
+  --background: #f7feff;
+  --chakra-primary: #319795;
+  --primary: #14d0fc;
+  --secondary: #72a5fd;
+  --accent: #3b55fc;
+  --button_hover: #000000;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.nav-link:hover {
+  background: var(--button_hover);
+}
+
+.nav-link.active {
+  background: var(--primary);
+}
